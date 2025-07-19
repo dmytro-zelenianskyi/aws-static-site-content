@@ -17,3 +17,4 @@ jobs:
             -H "Authorization: token ${{ secrets.PAT_PIPELINE }}" \
             -H "Accept: application/vnd.github.v3+json" \
             -d '{"event_type": "content-updated"}'
+            --fail --verbose
